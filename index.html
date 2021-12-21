@@ -1,0 +1,21 @@
+<input id="lang" placeholder="Programming language here...">
+<textarea placeholder="Code here..."></textarea>
+<button onclick="interpret(document.querySelector('#lang').value.toLowerCase(), document.querySelector('textarea').value)"
+<script src="dist/jsrepl.js" id="jsrepl-script"></script>
+<script>
+      var jsrepl = new JSREPL({  
+    input: function(){
+      prompt('Input:')
+    },
+output: function(a){
+alert(a);
+}
+  });  
+  
+  function interpret(lang, code) {
+    jsrepl.loadLanguage(lang, function () {  
+   console.log('loaded');  
+        jsrepl.eval(code);  
+  });
+  };
+</script>
