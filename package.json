@@ -1,0 +1,20 @@
+{
+  "name": "jsrepl-packed",
+  "version": "1.0.0",
+  "description": "@replit's (deprecated) JSRepl project but fixed, compiled, and modified into a repo and library for public and very simple usage.",
+  "main": "jsrepl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unzor/jsrepl-packed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unzor/jsrepl-packed/issues"
+  },
+  "homepage": "https://github.com/Unzor/jsrepl-packed#readme"
+}

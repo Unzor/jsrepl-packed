@@ -1,0 +1,71 @@
+<script src="jsrepl.js" id="jsrepl-script"></script>
+
+<div style="position: absolute; transform: translate(-50%, -50%); left: 95%; top: 50%;">
+<h1> JavaScript Variants </h1>
+
+JavaScript
+<br>
+CoffeeScript
+<br>
+Kaffeine
+<br>
+Move
+<br>
+Traceur (JavaScript.next)
+
+<h1> Esoteric </h1>
+
+Bloop
+<br>
+Brainfuck
+<br>
+LOLCODE
+<br>
+Unlambda
+<br>
+Emoticon
+<br>
+<h1>Classic</h1>
+
+Quick Basic
+<br>
+Forth
+<br>
+<h1>Serious</h1>
+
+Scheme
+<br>
+
+Lua
+<br>
+
+Python
+<br>
+
+Ruby (beta)
+</div>
+
+<input id="lang" placeholder="Programming language here...">
+<br>
+<br>
+<textarea placeholder="Code here..."></textarea>
+<br>
+<br>
+<button onclick="interpret(document.querySelector('#lang').value.toLowerCase(), document.querySelector('textarea').value)"> Interpret </button>
+<script>
+      var jsrepl = new JSREPL({  
+    input: function(){
+      prompt('Input:')
+    },
+output: function(a){
+alert(a);
+}
+  });  
+  
+  function interpret(lang, code) {
+    jsrepl.loadLanguage(lang, function () {  
+   console.log('loaded');  
+        jsrepl.eval(code);  
+  });
+  };
+</script>
