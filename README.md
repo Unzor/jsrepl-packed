@@ -1,2 +1,2 @@
 # jsrepl-packed
-@amasad's (deprecated) JSRepl but ready and packed into a repo and library.
+@replit's (deprecated) JSRepl project but fixed, compiled, and modified into a repo and library for public and very simple usage.
