@@ -63,9 +63,11 @@ alert(a);
   });  
   
   function interpret(lang, code) {
+    document.querySelector('button').disabled = true;
     jsrepl.loadLanguage(lang, function () {  
-   console.log('loaded');  
-        jsrepl.eval(code);  
+    document.querySelector('button').disabled = false;
+    console.log('loaded');  
+    jsrepl.eval(code);  
   });
   };
 </script>
