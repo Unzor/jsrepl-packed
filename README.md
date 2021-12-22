@@ -5,7 +5,7 @@
  
 # Add to site 
 ## Add from CDN
-Add this to your `<head>` to use JSrepl:
+Use this to use JSRepl without having to use the terminal:
 ```html
 <!DOCTYPE HTML>
 <html>
