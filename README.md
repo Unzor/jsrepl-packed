@@ -4,9 +4,33 @@
 # Add to site 
 
 ## Add from CDN
-Add this to your `<head>` to use JSrepl, or build below:
-```
-<script src="https://cdn.jsdelivr.net/gh/Unzor/jsrepl-packed/dist/jsrepl-lib.js" id="jsrepl-script"></script>
+Add this to your `<head>` to use JSrepl:
+```html
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <script src="https://cdn.jsdelivr.net/gh/Unzor/jsrepl-packed/dist/jsrepl-lib.js" id="jsrepl-script"></script>
+ </head>
+<body>
+<script>
+var jsrepl = new JSREPL({
+    input: function() {
+        prompt('Input:')
+    },
+    output: function(a) {
+        alert(a);
+    }
+});
+
+window.interpret = function(lang, code) {
+    jsrepl.loadLanguage(lang, function() {
+        console.log('loaded');
+        jsrepl.eval(code);
+    });
+};
+</script>
+</body>
+</html>
 ```
 
 ## Building
