@@ -6,7 +6,7 @@
 ## Add from CDN
 Add this to your `<head>` to use JSrepl, or build below:
 ```
-<script src="https://cdn.jsdelivr.net/gh/Unzor/jsrepl-packed/dist/jsrepl-lib.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Unzor/jsrepl-packed/dist/jsrepl-lib.js" id="jsrepl-script"></script>
 ```
 
 ## Building
