@@ -2,7 +2,7 @@
  @replit's (deprecated) JSRepl project but fixed, compiled, and modified into a repo and library for public and very simple usage.
 
 # Add to site 
-First, download the [build.zip](https://github.com/Unzor/jsrepl-packed/raw/main/dist/build.zip) archive and extract it in a webserver, or run ```git clone https://github.com/Unzor/jsrepl-packed``` and then extract all directories and files by running ``` cd jsrepl-packed && find . -maxdepth 1 -exec mv {} .. \; && cd ../ && rm jsrepl-packed```. Once finished, you may now use the compiled library like this to interpret a language:
+First, download the [build.zip](https://github.com/Unzor/jsrepl-packed/raw/main/dist/build.zip) archive and extract it in a webserver, or run ```git clone https://github.com/Unzor/jsrepl-packed``` and then extract all directories and files by running ``` cd jsrepl-packed && find . -maxdepth 1 -exec mv {} .. \; && cd ../ && rmdir jsrepl-packed```. Once finished, you may now use the compiled library like this to interpret a language:
 ```html
 <!DOCTYPE HTML>
 <html>
