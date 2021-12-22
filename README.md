@@ -10,7 +10,7 @@ Use this to use JSRepl without having to use the terminal:
 <!DOCTYPE HTML>
 <html>
  <head>
-  <script src="https://cdn.jsdelivr.net/gh/Unzor/jsrepl-packed/dist/jsrepl-lib.js" id="jsrepl-script"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Unzor/jsrepl-packed/dist/jsrepl-lib.min.js" id="jsrepl-script"></script>
  </head>
 <body>
 <script>
