@@ -5,12 +5,12 @@
  
 # Add to site 
 ## Add from CDN
-Use this to use JSRepl without having to use the terminal:
+Use this to use JSRepl without having to use the terminal. Please note that the script from CDN has been modified so there is no need for adding "jsrepl-script" to the script.
 ```html
 <!DOCTYPE HTML>
 <html>
  <head>
-  <script src="https://cdn.jsdelivr.net/gh/Unzor/jsrepl-packed/dist/jsrepl-lib.min.js" id="jsrepl-script"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Unzor/jsrepl-packed/dist/jsrepl-lib.min.js"></script>
  </head>
 <body>
 <script>
